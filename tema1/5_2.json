@@ -1,0 +1,12 @@
+{
+    "condition": [
+        "Sa se introduca un numar 1-3.",
+        "Daca este introdus 1, sa se calculeze schema bloc nr. 1.",
+        "Daca este introdus 2, sa se calculeze `(max(2a, 2b, xc)) / (min(2x, cb, 2a))`.",
+        "Daca este intridus 3, sa se calculeze schema bloc nr. 2."
+    ],
+    "ioscheme": [ 4, 1, 1, 4, 1 ],
+    "inputs": [
+        2, 1.2, 2.3, 4.5, 6.0
+    ]
+}

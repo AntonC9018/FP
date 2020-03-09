@@ -1,0 +1,8 @@
+{
+    "task": "Realizarea schemei bloc in cod",
+    "ioscheme": [17],
+    "condition": [
+        "Sa se afiseze la consola: "
+    ],
+    "inputs": []
+}

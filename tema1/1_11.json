@@ -1,0 +1,10 @@
+{
+    "task": "Realizarea schemei bloc in cod",
+    "ioscheme": [1, 4, 2],
+    "condition": [
+        "Sa se realizeze in cod aceste expresii:",
+        "<br> `y = log(a + x^2)+sin(x/b)^2`",
+        "<br> `z = e^(-cx)*(x + sqrt(x+a))/(x-sqrt(abs(x-b)))`"
+    ],
+    "inputs": [0.5, 1.1, 2.8, 1.5]
+}

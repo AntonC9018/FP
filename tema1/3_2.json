@@ -1,0 +1,17 @@
+{
+    "task": "Realizarea schemei bloc in cod",
+    "ioscheme": [
+        1,
+        3,
+        1
+    ],
+    "condition": [
+        "Sa se realizeze in cod aceasta expresie:",
+        "`{(s = (a + b) / (e^x + sin(x)), x < 2.8),(s = (a + b) / (x + 1), x < 6),(s = exp(x) + sin(x), a\\l\\tfel):}`"
+    ],
+    "inputs": [
+        0.1,
+        1,
+        2
+    ]
+}

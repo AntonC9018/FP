@@ -1,0 +1,9 @@
+{
+    "condition": [
+        "Calculati",
+        "`y = max(a + b, b^2 + c, 2a)/min(2b, 2z-1, c)`"
+    ],
+    "ioscheme":[1, 4, 1],
+    "task": "var.16, nr.4",
+    "inputs": [1, 0.2, 0.3, 1.2]    
+}

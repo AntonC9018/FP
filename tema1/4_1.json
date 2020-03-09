@@ -1,0 +1,9 @@
+{
+    "condition": [
+        "Calculati",
+        "`WD={(sin(2/k), k<1),(1/k, k=1),(abs(k^2)+pi, k>1):}`"
+    ],
+    "ioscheme":[1, 1, 1],
+    "task": "var.16, nr.4",
+    "inputs": [1]    
+}

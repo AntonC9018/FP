@@ -6,7 +6,7 @@
 
 struct RomanNumeral {
     int value;
-    int maxCount; // max number of consequent same letter written in a row
+    int maxCount; // max number of a same letter written in a row
     char symbol;
 };
 
@@ -17,7 +17,7 @@ const RomanNumeral romanNumerals[] = {
     { 50,  1, 'L' },
     { 100, 3, 'C' },
     { 500, 1, 'D' },
-    { 1000, __INT_MAX__, 'M' }
+    { 1000, __INT_MAX__, 'M' } // any number of these are allowed in a row
 };
 
 #define romanNumeralsCount sizeof(romanNumerals) / sizeof(RomanNumeral)
@@ -46,14 +46,14 @@ int main()
     printf("Echivalentul arab de numarul %s este %i", romanNumString, result);
 
     int num;
-    printf("Dati un numar: ");
+    printf("\n\nDati un numar: ");
     scanf("%i", &num);
 
-    // arab -> normal
+    // arab -> roman
     resetString(romanNumString, strlength);
     convertArabicToRomanString(num, romanNumString);
 
-    printf("Numarul introdus scris cu numerele romane este %s", romanNumString);
+    printf("%i scris cu numerele romane este %s", num, romanNumString);
 
     return 0;
 }
@@ -153,11 +153,6 @@ void convertArabicToRomanString(int num, char *romanString)
     int subtractionBufferOffset = 0;
     // for example, for XIIX, subtractFrom = 10 (the second X)
     int subtractFrom = -1;
-
-    printf("\nValues: ");
-    for (int i = 0; i < length; i++) {
-        printf("%i ", valuesBuffer[i]);
-    }
     
     // arrange the digits for subtraction in order in the subtractionBuffer
     for (int i = romanNumeralsCount - 2; i >= 0; i--) {
@@ -208,6 +203,7 @@ void convertArabicToRomanString(int num, char *romanString)
         // in reverse order!
         // before subtractFrom!
         if (subtractFrom == romanNumerals[i].value) {
+            romanStringOffset--;
             for (int j = subtractionBufferOffset - 1; j >= 0; j--) {
                 romanString[romanStringOffset++] = romanNumerals[subtractionBuffer[j]].symbol;
             }
@@ -219,7 +215,7 @@ void convertArabicToRomanString(int num, char *romanString)
 
 int* getRomanValuesArray(int num, int currentRomanIndex, int *resultSpace) 
 {
-    printf("Number: %i, Roman: %c\n", num, romanNumerals[currentRomanIndex].symbol);
+    // printf("Number: %i, Roman: %c\n", num, romanNumerals[currentRomanIndex].symbol);
     int romanStringOffset = 0;
     int count = 0;
     auto currentRoman = romanNumerals[currentRomanIndex];
@@ -230,10 +226,7 @@ int* getRomanValuesArray(int num, int currentRomanIndex, int *resultSpace)
         resultSpace++;
         num -= currentRoman.value;
         count++;
-        printf("Current valiables: num = %i\n", num);
     }
-
-    printf("Count: %i\n", count);
 
     // we're finished
     if (num == 0)

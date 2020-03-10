@@ -1,4 +1,4 @@
-// 47
+// n47
 // Se da o propozitie cu cuvintele separate cu spatiile
 // De afisat cuvintele de pe pozitii pare
 

@@ -1,4 +1,4 @@
-// 46
+// n46
 // Se da o propozitie formata din cuvinte separate prin spatiu
 // De afisat:
 //      a) cuvintele care incep cu o litera introdusa de la tastatura

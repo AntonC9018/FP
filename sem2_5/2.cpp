@@ -14,6 +14,33 @@ enum State {
     NO_WORD, READING_WORD
 };
 
+Word findWordAlgo(char *str, int bit);
+Word findLongestWord(char *str);
+Word findShortestWord(char *str);
+
+
+int main()
+{
+    char str[strlength];
+    printf("Introduceti o propozitie: ");
+    gets(str);
+    Word longest = findLongestWord(str);
+    Word shortest = findShortestWord(str);
+
+    // debug
+    // printf("%p, %i\n", longest.ptr, longest.size);
+    // printf("%p, %i\n", shortest.ptr, shortest.size);
+
+    *(longest.ptr + longest.size) = '\0';
+    *(shortest.ptr + shortest.size) = '\0';
+
+    printf("Cel mai lung cuvant este \"%s\" si are lungimea %i\n", longest.ptr, longest.size);
+    printf("Cel mai scurt cuvant este \"%s\" si are lungimea %i", shortest.ptr, shortest.size);
+
+    return 0;
+}
+
+
 // The bit determines whether the longest or the shortest string is to be searched for
 // The bit being equal to 1 means that we look for the shortest substring
 // Conversely, bit = 0 means we look for the shortest one
@@ -65,26 +92,4 @@ Word findLongestWord(char *str)
 Word findShortestWord(char *str)
 {
     return findWordAlgo(str, 1);
-}
-
-
-int main()
-{
-    char str[strlength];
-    printf("Introduceti o propozitie: ");
-    gets(str);
-    Word longest = findLongestWord(str);
-    Word shortest = findShortestWord(str);
-
-    // debug
-    // printf("%p, %i\n", longest.ptr, longest.size);
-    // printf("%p, %i\n", shortest.ptr, shortest.size);
-
-    *(longest.ptr + longest.size) = '\0';
-    *(shortest.ptr + shortest.size) = '\0';
-
-    printf("Cel mai lung cuvant este \"%s\" si are lungimea %i\n", longest.ptr, longest.size);
-    printf("Cel mai scurt cuvant este \"%s\" si are lungimea %i", shortest.ptr, shortest.size);
-
-    return 0;
 }

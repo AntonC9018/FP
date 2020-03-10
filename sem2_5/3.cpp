@@ -33,11 +33,11 @@ int main()
     // A)
     findWordsStartingWithLetterFromSet(string, letterSet, resultsBuffer);
 
-    printf("Cuvintele care se incep cu %c sunt: ", letterSet[0]);
+    printf("\nCuvintele care se incep cu %c sunt: ", letterSet[0]);
     printResultBufferAsWords(resultsBuffer);
 
 
-    char *vowelSet = "AEUIOaeuio";
+    char vowelSet[] = "AEUIOaeuio";
 
     // B) starts with vowels
     resetBuffer(resultsBuffer);

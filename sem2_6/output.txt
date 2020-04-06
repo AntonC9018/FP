@@ -1,0 +1,80 @@
+Oferta numarul 0:
+Locatia .........       TA
+Numarul de camere        2
+Pretul ..........   100.00
+---------------------------------
+Oferta numarul 1:
+Locatia .........       TB
+Numarul de camere        3
+Pretul ..........   200.00
+---------------------------------
+Oferta numarul 2:
+Locatia .........       QA
+Numarul de camere        1
+Pretul ..........   300.00
+---------------------------------
+Oferta numarul 3:
+Locatia .........       AA
+Numarul de camere        1
+Pretul ..........   400.00
+---------------------------------
+Oferta numarul 4:
+Locatia .........       QB
+Numarul de camere        1
+Pretul ..........   500.00
+---------------------------------
+Oferta numarul 5:
+Locatia .........       TA
+Numarul de camere        1
+Pretul ..........   200.00
+---------------------------------
+Oferta numarul 6:
+Locatia .........       TA
+Numarul de camere        1
+Pretul ..........   500.00
+---------------------------------
+Oferta numarul 7:
+Locatia .........       TB
+Numarul de camere        5
+Pretul ..........   900.00
+---------------------------------
+Oferta numarul 8:
+Locatia .........       QA
+Numarul de camere        2
+Pretul ..........   600.00
+---------------------------------
+Oferta numarul 9:
+Locatia .........       QB
+Numarul de camere        3
+Pretul ..........   550.00
+---------------------------------
+
+Ofertele, sectorul carora se incepe cu T
+
+Oferta numarul 0:
+Locatia .........       TA
+Numarul de camere        2
+Pretul ..........   100.00
+---------------------------------
+Oferta numarul 1:
+Locatia .........       TB
+Numarul de camere        3
+Pretul ..........   200.00
+---------------------------------
+Oferta numarul 5:
+Locatia .........       TA
+Numarul de camere        1
+Pretul ..........   200.00
+---------------------------------
+Oferta numarul 6:
+Locatia .........       TA
+Numarul de camere        1
+Pretul ..........   500.00
+---------------------------------
+Oferta numarul 7:
+Locatia .........       TB
+Numarul de camere        5
+Pretul ..........   900.00
+---------------------------------
+
+Procentajul este   0.20

@@ -61,9 +61,8 @@ int main()
         printOffer(&matches[i]);
     }
 
-    float share = (float) matchesCount / dataLength * 100;
-
-    printf("\nProcentajul lor este %6.2f", share);
+    float share = ((float)matchesCount) / ((float)dataLength) * 100;
+    printf("\nProcentajul lor este %f", share);
 
     return 0;
 }

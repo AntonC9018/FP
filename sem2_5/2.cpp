@@ -27,10 +27,6 @@ int main()
     Word longest = findLongestWord(str);
     Word shortest = findShortestWord(str);
 
-    // debug
-    // printf("%p, %i\n", longest.ptr, longest.size);
-    // printf("%p, %i\n", shortest.ptr, shortest.size);
-
     *(longest.ptr + longest.size) = '\0';
     *(shortest.ptr + shortest.size) = '\0';
 
@@ -69,8 +65,8 @@ Word findWordAlgo(char *str, int bit)
                 {
                     result.size = currentWord.size;         // reset best result
                     result.ptr = currentWord.ptr;
-                    state = NO_WORD;
                 }
+                state = NO_WORD;
             } else {
                 currentWord.size++;
             }

@@ -62,7 +62,7 @@ int main() {
     } 
 
     // afisam
-    printf("Dimensiunele introduse: n = %i, m = %i.\n\n");
+    printf("Dimensiunele introduse: n = %i, m = %i.\n\n", n, m);
 
     printf("Tabloul introdus A:\n");
 

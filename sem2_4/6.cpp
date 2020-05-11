@@ -1,6 +1,5 @@
-// n10
-// Sa se afiseze rasturnatul unui numar utilizand o functie recursiva
-// 12345 -> 54321
+// De calculat numar de combinatii in care se poate urca
+// starile daca se poate lua pasi de lungime 1 sau 2
 
 #include <stdio.h>
 #include <math.h>

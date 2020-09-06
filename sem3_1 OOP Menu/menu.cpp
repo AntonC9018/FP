@@ -16,7 +16,7 @@ class Menu
 {
 private:
     Container<Product> m_products;
-    const static uint defaultPersonCapacity = 100;
+    const static uint defaultProductCapacity = 100;
 
     // I would've used a dictionary here, but I'm not allowed to use
     // C++ data containers and don't feel like implementing a dictionary myself
@@ -69,7 +69,7 @@ private:
     }
 
 public:
-    Menu() : m_products(defaultPersonCapacity),
+    Menu() : m_products(defaultProductCapacity),
              m_options(defaultOptionCapacity) {}
 
     // ideally, this would be AddOption(std::string key, const MenuOption &option)

@@ -73,7 +73,7 @@ public:
 
     void sort(CompareFunc compareFunc)
     {
-        // I'm going to do a dump sort so as not to waste too much time
+        // I'm going to do a dumb sort so as not to waste too much time
         for (auto i = begin(); i < end(); i++)
             for (auto j = begin(); j < end(); j++)
                 if (compareFunc(*i, *j) > 0)

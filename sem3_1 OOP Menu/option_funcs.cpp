@@ -55,17 +55,20 @@ void PrintIfManufacturerMatches(Container<Product> &products)
 
 void PrintIfWeightMatches(Container<Product> &products)
 {
-    std::cout << "Specify the weight, products of which to show: ";
+    std::cout << "Specify the weight, before the first product of which a new product will be added: ";
     int queriedWeight;
     std::cin >> queriedWeight;
     for (auto iter = products.begin(); iter < products.end(); iter++)
     {
         if ((*iter).GetWeight() == queriedWeight)
         {
-            std::cout << std::endl;
-            (*iter).PrintAll();
+            Product product = Product();
+            product.PromptInputAll();
+            products.addAt(product, iter);
+            return;
         }
     }
+    std::cout << "No objects of the specified weight were found." << std::endl;
 }
 
 void ChangeLast(Container<Product> &products)

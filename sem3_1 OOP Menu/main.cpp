@@ -44,7 +44,7 @@ int main()
     };
     MenuOption weightOption{
         optionFunc : PrintIfWeightMatches,
-        description : "Input a weight in kg and print the products that have that weight"
+        description : "Input a weight in kg and add a new product before the first product that has that weight"
     };
     MenuOption changeLastOption{
         optionFunc : ChangeLast,

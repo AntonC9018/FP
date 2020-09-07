@@ -59,6 +59,20 @@ public:
         return m_array[index];
     }
 
+    void addAt(const T &item, iterator at)
+    {
+        checkCanAdd(); // throw if can't add any more items
+
+        // take element at location `iter - 1` at put it into `iter`
+        for (auto iter = end(); iter > at; iter--)
+        {
+            *iter = *(iter - 1);
+        }
+
+        *at = item;
+        m_count++;
+    }
+
     // https://stackoverflow.com/questions/32926042/how-to-implement-a-simple-container-with-placement-new-and-emplace-functionality
     // template <typename... Ts>
     // const T &emplace(Ts &&... args)

@@ -1,4 +1,3 @@
-#include <utility>
 
 template <typename T>
 class Container
@@ -35,6 +34,11 @@ public:
     {
         m_count = 0;
         m_array = new T[capacity];
+    }
+
+    ~Container()
+    {
+        delete[] m_array;
     }
 
     void add(const T &item)

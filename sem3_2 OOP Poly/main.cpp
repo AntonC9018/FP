@@ -1,4 +1,5 @@
-// https://moodle.usm.md/mod/assign/view.php?id=71065
+// https://moodle.usm.md/mod/assign/view.php?id=71250
+// care a fost bazata pe https://moodle.usm.md/mod/assign/view.php?id=71065
 #include "products/Product.h"
 #include "products/BookProduct.h"
 #include "products/ProductWithWeight.h"

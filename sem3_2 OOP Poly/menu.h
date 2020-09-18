@@ -11,8 +11,6 @@ class Menu
 private:
     ProductsVector m_products;
 
-    // I would've used a dictionary here, but I'm not allowed to use
-    // C++ data std::vectors and don't feel like implementing a dictionary myself
     std::vector<MenuOption> m_options;
 
     const static int returnOption = -1;

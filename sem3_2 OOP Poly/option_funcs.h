@@ -22,9 +22,19 @@ void SetAll(ProductsVector &products)
 
 void Sort(ProductsVector &products)
 {
-    std::sort(products.begin(), products.end(), [](std::unique_ptr<Product> &a, std::unique_ptr<Product> &b) {
-        return b->GetName().compare(a->GetName());
-    });
+    std::sort(products.begin(), products.end(),
+              [](const std::unique_ptr<Product> &a, const std::unique_ptr<Product> &b) {
+                  return a->GetName().compare(b->GetName()) < 0;
+              });
+
+    // for (auto i = products.begin(); i != products.end(); i++)
+    //     for (auto j = products.begin(); j != products.end(); j++)
+    //         if ((*i)->GetName().compare((*j)->GetName()) < 0 && i != j)
+    //         {
+    //             auto temp = std::move(*i);
+    //             *i = std::move(*j);
+    //             *j = std::move(temp);
+    //         }
 }
 
 void PrintIfManufacturerMatches(ProductsVector &products)

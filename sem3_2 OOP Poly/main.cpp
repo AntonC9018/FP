@@ -14,6 +14,26 @@ int main()
 
     Menu menu = Menu();
 
+    auto p2 = std::make_unique<ProductWithWeight>(
+        ProductBaseParams{
+            name : "2",
+            manufactureDate : "2",
+            manifacturer : "2",
+            location : "2",
+        },
+        2, "kg");
+    menu.AddProduct(std::move(p2));
+
+    auto p3 = std::make_unique<TextProduct>(
+        ProductBaseParams{
+            name : "3",
+            manufactureDate : "3",
+            manifacturer : "3",
+            location : "3",
+        },
+        3, "3");
+    menu.AddProduct(std::move(p3));
+
     auto p1 = std::make_unique<BookProduct>(
         BookParams{
             baseParams : {name : "1",

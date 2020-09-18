@@ -60,5 +60,5 @@ int main()
 
     menu.Start();
 
-    return 1;
+    return 0;
 }

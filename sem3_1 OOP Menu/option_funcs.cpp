@@ -82,20 +82,19 @@ void ChangeLast(Container<Product> &products)
 
 void AddProduct(Container<Product> &products)
 {
-    /*
+
     // this doesn't work and I do not understand why
     // perhaps ultimately a copy is received after all
-    try
-    {
-        Product product = products.add(Product());
-        product.PromptInputAll();
-    }
-    // limit of the array exceeded
-    catch (const std::string &s)
-    {
-        std::cerr << s << '\n';
-    }
-    */
+    // try
+    // {
+    // Product &product = products.add(Product());
+    // product.PromptInputAll();
+    // }
+    // // limit of the array exceeded
+    // catch (const std::string &s)
+    // {
+    //     std::cerr << s << '\n';
+    // }
 
     /*
     if I do it the other way around:

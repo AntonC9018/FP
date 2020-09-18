@@ -3,6 +3,6 @@
 class AbstractProduct
 {
 public:
-    virtual void PromptInputAll();
-    virtual void PrintAll() const;
+    virtual void PromptInputAll() = 0;
+    virtual void PrintAll() const = 0;
 };

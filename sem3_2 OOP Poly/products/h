@@ -1,3 +1,0 @@
-#pragma once
-typedef std::vector<std::unique_ptr<Product>> ProductsVector;
-typedef void (*AddProductFunc)(ProductsVector &);

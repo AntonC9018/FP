@@ -1,0 +1,13 @@
+// Complex<T> operator+(Complex<T> rhs) // A + B
+// {
+//     return Complex<T>(real + rhs.real, imaginary + rhs.imaginary);
+// }
+
+// Complex<T> operator-(Complex<T> rhs) // A - B
+// {
+//     return Complex<T>(real - rhs.real, imaginary - rhs.imaginary);
+// }
+// Complex<T> operator-()
+// {
+//     return Complex(-real, -imaginary);
+// }

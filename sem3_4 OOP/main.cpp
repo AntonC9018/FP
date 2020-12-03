@@ -180,12 +180,12 @@ void printType<float>()
 
 int main()
 {
-    Complex<float> a(1.4f, 1.2f);
-    Complex<float> b(0, 0);
+    Complex<int> a(1, 2);
+    Complex<int> b(0, 0);
     std::cout << a << ", " << b << std::endl;
     try
     {
-        Complex<float> result = a /= b;
+        Complex<int> result = a /= b;
         std::cout << "a / b = " << (result) << std::endl;
     }
     catch (const char *msg)
